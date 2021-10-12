@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Set this value to the path of kafka local installation
-KAFKA_INSTALL_PATH="/Users/kunal.tiwary/Downloads/kafka_2.11-2.2.0/"
+KAFKA_INSTALL_PATH="<local directory path where kafka is installed>"
 
 if [[ -f zookeeper.pid ]]; then
   echo "Zookeeper.pid file exists"

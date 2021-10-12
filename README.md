@@ -30,6 +30,8 @@ We need to keep track of the following aggregations:
 ## Running Locally
 * Import the project as a Scala SBT project
 * Install kafka binaries from `https://kafka.apache.org/downloads` specifically version `2.2.0`
+* After installing kafka binaries to a local directory, update the `KAFKA_INSTALL_PATH` value in `run-kafka.sh`
+* Run the script with command `./scripts/run-kafka.sh` to start zookeeper and kafka instances
 * Run `KafkaAdmin.scala` program to create the topic `page-view-topic`
 * Run `PageViewEventProducer.scala` program to push some events into the topic `page-view-topic`
 * Run `UserPageViewCountStream.scala` program which is the stream application for producing user-page-view aggregated metrics
