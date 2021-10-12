@@ -40,6 +40,7 @@ We need to keep track of the following aggregations:
 ## TODOs & Improvements
 * Add [tests](https://kafka.apache.org/20/documentation/streams/developer-guide/testing.html) for kafka streams
 * Add a config framework and move things such as durations, topic names, store names etc. into it
+* Add proper logging using a logging framework
 * Dockerize the project and use confluent kafka docker images (for latest version) instead of installing kafka locally
 * Use schema registry for registering page view event schema in avro format
 
