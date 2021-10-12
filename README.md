@@ -1,8 +1,10 @@
 ## Objective
 
 Produce aggregated count metrics in real-time for incoming page view events.
+
+### Summary
 A JSON encoded page view event is generated each time a user views a webpage. 
-A page view event records the userId, pageId, and timestamp of the page view, e.g.
+A page view event records the `userId`, `pageId`, and `timestamp` of the page view, e.g.
 
 ```
 {
@@ -12,7 +14,7 @@ A page view event records the userId, pageId, and timestamp of the page view, e.
 }
 ```
 
-The userId and pageId are both v4 UUIDs, and the timestamp is a millisecond precision epoch timestamp. 
+The `userId` and `pageId` are both v4 UUIDs, and the `timestamp` is a millisecond precision epoch timestamp. 
 We need to keep track of the following aggregations:
 * For each page `p`, the 7-day page view count, which counts the number of times that `p` has been viewed in the last 7
    days.
