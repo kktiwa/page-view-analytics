@@ -28,7 +28,7 @@ We need to keep track of the following aggregations:
 * Kafka version 2.2.0
 
 ## Running Locally
-* Import the project as a Scala SBT project
+* Import the project as a Scala SBT project in the IDE (such as Intellij Idea)
 * Install kafka binaries from `https://kafka.apache.org/downloads` specifically version `2.2.0`
 * After installing kafka binaries to a local directory, update the `KAFKA_INSTALL_PATH` value in `run-kafka.sh`
 * Run the script with command `./scripts/run-kafka.sh` to start zookeeper and kafka instances
